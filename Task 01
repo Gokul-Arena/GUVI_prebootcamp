@@ -53,7 +53,7 @@ Node.js does not have capability to add HTML tags.
 => Paint
    Takes render tree and creates layers.
    
-   Produces bitmap from each layer and uploaded to the GPU as a texture and renders to the screen.
+   Produces bitmap from each layer and uploads it to the GPU as a texture and renders to the screen.
      
 
 
