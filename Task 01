@@ -12,7 +12,7 @@ Node.js uses CommonJS module system.
 Browser JS is only used in frontend development.
 On the other hand, Node.js can be used in both frontend as well as backend development.
 
-Browser JS is capable to add HTML tags and plat with DOM.
+Browser JS is capable to add HTML tags and play with DOM.
 Node.js does not have capability to add HTML tags.
 
 
