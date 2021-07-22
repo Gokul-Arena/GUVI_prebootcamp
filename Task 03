@@ -195,3 +195,21 @@ console.log(a, b, c, d, e, f);
 
 Output:
 true false true false true false
+
+
+
+*** Task 2: Simple Programs todo for Operators ***
+
+1. Square of a number.
+
+Code:
+let a = 9;
+let b = a*a;
+console.log(b);
+
+Output:
+81
+
+
+
+2. 
