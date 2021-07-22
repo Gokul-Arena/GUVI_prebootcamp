@@ -1,0 +1,86 @@
+(1)
+
+*** JSON Resume *** (object of objects)
+
+{
+"basics" : {
+"name" : "Gokul V",
+"email" : "gokul.26.12.1995@gmail.com",
+"phone" : "9962768068",
+"location" : {
+"address" : "No.3, 3rd Cross Street, Thirumal Nagar West Extension, Poonamallee",
+"city" : "Chennai",
+"postal code" : "600056",
+"state" : "Tamil Nadu"
+}
+},
+"education" : {
+"education1" : {
+"degree" : "M.E.",
+"Major" : "Avionics",
+"startYear" : "2013",
+"endYear" : "2017"
+"cgpa" : "6.5"
+},
+"education2" : {
+"degree" : "B.E.",
+"Major" : "Aeronautical Engineering",
+"startYear" : "2018",
+"endYear" : "2020",
+"cgpa" : "8.0"
+}
+}
+"work" : {
+"work1" : {
+"jobTitle" : "Engineering Intern",
+"companyName" : "Virginia Tech",
+"location" : "Maduravoyal"
+"startDate" : "October 2020",
+"endDate" : "May 2021",
+"workExperience" : "8 months"
+},
+"work2" : {
+"jobTitle" : "Engineering Intern",
+"companyName" : "UCAL Fuel Systems",
+"location" : "Chengalpattu"
+"startDate" : "August 2019",
+"endDate" : "August 2019",
+"workExperience" : "1 month"
+}
+}
+"technicalSkills" : {
+"programming" : "C, C++, Python",
+"software" : "Mission Panner"
+},
+"projects" : {
+"ugProject" : {
+"title" : “Development of flight controller for the autonomous navigation of Unmanned Aerial
+Vehicle using STM32 micro-controller”,
+"description" : "The task of the UAV is to operate normally and
+execute its basic functions. I t is necessary to have a group of devices acting together in
+an independent and integrated manner. Commercially available flight controllers do
+not allow customization. Hence there is a need to create a open hardware architecture
+to change the characteristics of the controller according to the user requirements . The
+aim of the project is to create a flight controller using STM32 micro-controller for
+autonomous operations. It uses PID control algorithm that acts as a control loop
+feedback mechanism."
+},
+"pgProject" : {
+"title" : “Determination of fuel characteristics with combination of
+kerosene and Aluminium oxide”,
+"description" : "The project discusses on fuel burn rate, ignition time delays at various
+temperatures and the values are gathered by using the camera and analysed"
+}
+}
+"extraCurricularActivities" : {
+"1" : "Participated on Symposium conducted by MIT and have won second place on parachute
+designing",
+"2" : "Participated on a competition with arduino based voice recognition project",
+"3" : "Participated Workshops on Vibration, Arduino, Image Processing and Robotics"
+}
+}
+
+
+(2)
+
+Comparing Two Objects having same properties without order
