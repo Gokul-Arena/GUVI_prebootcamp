@@ -212,4 +212,121 @@ Output:
 
 
 
-2. 
+2. Swapping 2 numbers
+
+Code:
+let a = 10;
+let b = 20;
+let temp;
+temp = a;
+a = b;
+b = temp;
+console.log(a, b);
+
+Output:
+20 10   // Initially a is 10, b is 20. But after swapping a is 20, b is 10
+
+
+
+3. Addition of 3 numbers
+
+Code:
+let a=10; b=20; c=30;
+let d;
+d = a+b+c;
+console.log(d);
+
+Output:
+60
+
+
+
+4. Celsius to Fahrenheit Conversion
+
+Code:
+let celsius = 25;
+let fahrenheit;
+fahrenheit = (celsius * (9/5)) + 32;
+console.log(fahrenheit);
+
+Output:
+77
+
+
+
+5. Meter to miles
+
+Code:
+let meter = 25;
+let miles;
+miles = meter/1609.344;
+console.log(miles.toFixed(5));
+
+Output:
+0.01553
+
+
+
+6. Pounds to kg
+
+Code:
+let pound = 25;
+let kg;
+kg = pound * 0.45359237;
+console.log(kg.toFixed(5));
+
+Output:
+11.33981
+
+
+
+7. Calculate Batting Average
+
+Code:
+let scoredRuns = 25;
+let timesOut = 3;
+let battingAverage = scoredRuns / timesOut;
+console.log(battingAverage);
+
+Output:
+8.333333333333334
+
+
+
+8. Calculate five test scores and print their average
+
+Code:
+let t1=60, t2=70, t3=80, t4=90, t5=100;
+let n = 5;
+let average = (t1+t2+t3+t4+t5) / n;
+console.log(average);
+
+Output:
+80
+
+
+
+9. Power of any number x ^ y
+
+Code:
+let a = 8;
+let b = 2;
+let c = Math.pow(a,b);
+console.log(c);
+
+Output:
+64
+
+
+
+10. Calculate Simple Interest
+
+Code:
+let p = 4000;
+let r = 12;
+let t = 3;
+let si = (p*r*t) / 100;
+console.log(si);
+
+Output:
+1440
