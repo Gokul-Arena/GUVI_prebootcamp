@@ -330,3 +330,15 @@ console.log(si);
 
 Output:
 1440
+
+
+
+11. Calculate area of an equilateral triangle
+
+Code:
+let a = 7;
+let area = (Math.sqrt(3)/4) * (a*a);
+console.log(area);
+
+Output:
+21.21762
