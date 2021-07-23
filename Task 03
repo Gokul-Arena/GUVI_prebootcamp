@@ -322,9 +322,9 @@ Output:
 10. Calculate Simple Interest
 
 Code:
-let p = 4000;
-let r = 12;
-let t = 3;
+let p = 4000; //principal
+let r = 12;   //rate of interest
+let t = 3;  //time
 let si = (p*r*t) / 100;
 console.log(si);
 
@@ -336,7 +336,7 @@ Output:
 11. Calculate area of an equilateral triangle
 
 Code:
-let a = 7;
+let a = 7; //side
 let area = (Math.sqrt(3)/4) * (a*a);
 console.log(area);
 
@@ -345,3 +345,149 @@ Output:
 
 
 
+12. Area Of Isosceles Triangle
+
+Code:
+let b = 10;  //base
+let h = 17;  //height
+let area = (1/2) * b * h;
+console.log(area);
+
+Output:
+85
+
+
+
+13. Volume Of Sphere
+
+Code:
+let r = 3; //radius
+let volume = (4/3) * Math.PI * Math.pow(r, 3);
+console.log(volume.toFixed(5));
+
+Output:
+113.09734
+
+
+
+14. Volume Of Prism
+
+Code:
+let b = 25; //baseArea
+let l = 12; //length
+let volume = b * l;
+console.log(volume);
+
+Output:
+300
+
+
+
+15. Find area of a triangle.
+
+Code:
+let b = 4; //baseArea
+let h = 2; //length
+let area = (1/2) * b * h;
+console.log(area);
+
+Output:
+4
+
+
+
+16. Give the Actual cost and Sold cost, Calculate Discount Of Product
+
+Code:
+let actualCost = 120;
+let soldCost = 90;
+let discount = ((actualCost-soldCost)/actualCost) * 100;
+console.log(discount);
+
+Output:
+25
+
+
+
+17. Given their radius of a circle and find its diameter, circumference and area.
+
+Code:
+let r = 28; //radius
+let d = 2 * r; //diameter
+let c = 2 * Math.PI * r; //circumference
+console.log("Diameter = " + d, ",", "Circumference = " + c);
+
+Output:
+Diameter = 56 , Circumference = 175.92918860102841
+
+
+
+18. Given two numbers and perform all arithmetic operations.
+
+Code:
+let a = 22;
+let b = 10;
+let add = a+b;
+let sub = a-b;
+let mul = a*b;
+let exp = a**b;
+let div = a/b;
+let mod =a%b;
+let incr = a++;
+let decr = b--;
+console.log(add, sub, mul, exp, div, mod, incr, decr);
+
+Output:
+32 12 220 26559922791424 2.2 2 22 10
+
+
+
+19. Display the asterisk pattern as shown below (No loop needed).
+*****
+*****
+*****
+*****
+*****
+
+Code:
+console.log("","*****",'\n',"*****",'\n',"*****",'\n',"*****",'\n',"*****");
+
+Output:
+ ***** 
+ ***** 
+ ***** 
+ ***** 
+ *****
+ 
+ 
+ 
+ 20. Calculate electricity bill?
+ For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
+
+ 
+ Code:
+ let MonthsinHrs = 24 * 30; //assuming 30 days in a month (hrs.)
+ let energyConsumption1hour = 100; //Watts
+ let energyConsumption1month = (MonthsinHrs * energyConsumption1hour)/1000; //KiloWatt Hr.
+ let unit = 10;
+ let bill = energyConsumption1month * unit;
+ console.log(bill);
+ 
+ Output:
+ 720
+ 
+ 
+ 
+ 21. Program To Calculate CGPA
+ 
+ Code:
+let subject1 = 9; //grade points
+let subject2 = 8;
+let subject3 = 7;
+let subject4 = 6;
+let subject5 = 8;
+let cgpa = ((subject1 + subject2 + subject3 + subject4 + subject5)/5);
+console.log(cgpa);
+
+Output:
+7.6
