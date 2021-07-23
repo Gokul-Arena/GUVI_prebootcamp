@@ -1,0 +1,50 @@
+
+[
+dimensions : {
+  overallLength_(mm) : 3500,
+  overallWidth_(mm) : 1600,
+  overallHeight_(mm) : 1490,
+  wheelbase_(mm) : 2360,
+  trackWidth : {
+    front_(mm) : 1405,
+    rear_(mm) : 1400
+  },
+  minimumTurningRadius_(m) : 4.5,
+  minimumGroundClearance_(mm) : 170
+},
+capacities : {
+  seatingCapacity_(persons) : 5,
+  fuelTankCapacity_(litres) : 35
+},
+engine : {
+  type : "KB-Series",
+  numberOfCylinders : 3,
+  numberOfValves : 12,
+  capacity_(cc/cm^3): 998,
+  bore_x_Stroke_(mm) : "73.0x79.5",
+  compressionRatio : "10:1",
+  maximumPower_(PS/rpm) : "67/6200",
+  maximumTorque_(Nm/rpm) : "90/3500",
+  fuelDistribution : "Multipoint Injection"
+},
+transmission : {
+  type : "5-speed MT"
+},
+chassis : {
+  steering : "Rack & Pinion, Power Assisted",
+  brakes : {
+    front : "Ventilated discs",
+    rear : "Drums"
+  },
+  suspension : {
+    front : "Macpherson strut & coil spring",
+    rear : "Isolated trailing link & coil spring"
+  },
+  shockAbsorbers : "Gas Filled",
+  tyre_(tubeless) : "155/80R13"
+},
+weights : {
+  kerbWeight_(min._fullOptions)_(kg) : "860-880",
+  grossVehicleWeight_(kg) : 1320
+}
+]
