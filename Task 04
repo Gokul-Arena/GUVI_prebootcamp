@@ -1,3 +1,116 @@
+(1)
+
+1. Print odd numbers in an array
+
+Code:
+const c = [1,2,5,6,3,2];
+    var b = [];
+let a = function(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 !== 0) {
+            b.push(arr[i]);
+        }
+    }
+    return b;
+}
+console.log(a(c));
+
+Output
+[ 1, 5, 3 ]
+
+
+2. Convert all the strings to title caps in a string array
+
+Code
+let c = "all is well";
+let a = function(b) {
+  var b = b.toLowerCase().split(" ");
+    for (let i = 0; i < b.length; i++) {
+      b[i] = b[i].charAt(0).toUpperCase() + b[i].slice(1);
+    }
+    return b.join(" ");
+}
+console.log(a(c));
+
+Output
+All Is Well
+
+
+3. Sum of all numbers in an array
+
+Code
+let c = [1,2,5,6,3,2];
+let a = function(b) {
+  let sum = 0;
+    for (let i = 0; i < b.length; i++) {
+      sum += +b[i];
+    }
+    return sum;
+}
+console.log(a(c));
+
+Output
+19
+
+
+4. Return all the prime numbers in an array
+
+Code
+let c = [100, 200, 31, 13, 97, 10, 20, 11];
+let a = function(b) {
+  var arr = [];
+  var a;
+  for (i=0; i<b.length; i++) {
+    for (let j = 2; j < b[i]; j++) {
+      if (b[i] % j === 0) {
+        a = true;
+        break;
+      }
+      else {
+        a = false;
+      }
+    }
+    if (a == false) {
+      arr.push(b[i]);
+    }
+  }
+    return arr;
+}
+console.log(a(c));
+
+Output
+[ 31, 13, 97, 11 ]
+
+
+5. Return all the palindromes in an array
+
+Code
+let c = [121, 200, 313, 13, 979, 10, 202, 11];
+let a = function(b) {
+  var arr = [];
+
+  for (i=0; i<b.length; i++) {
+    if (isPalindrome(b[i]) === true) {
+      arr.push(b[i]);
+    }
+  }
+  return arr;
+
+function isPalindrome(d) {
+   let str = "" + d;
+   for (i=0; i<(str.length/2); i++) {
+     if (d[i] !== str.length -1 -i) {
+      return false;
+      break;
+     }  
+   }
+   return true;
+ }
+}
+console.log(a(c));
+
+
+
 (2)
 
 1. Write a function called “addFive”.
