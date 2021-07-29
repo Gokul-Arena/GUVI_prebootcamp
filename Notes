@@ -1,0 +1,22 @@
+29-07-2021
+
+--- var, let, const ---
+
+var - global scope
+let, const - local scope / block scope //ES6
+
+--- "this" keyword ---
+normal function = "this" keyword is aware.
+arrow function = not aware of "this" keyword.
+
+function foo() {
+  console.log('this is foo()');
+}
+
+foo()
+
+let _this = this;
+let bar = () => {
+  console.log('this is bar()', _this);
+};
+bar()
