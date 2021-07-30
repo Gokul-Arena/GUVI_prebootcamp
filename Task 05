@@ -595,7 +595,7 @@ console.log(sum_even);
 
 
 
-(3)
+(3)***
 
  Part 3: Find the culprits and nail them — debugging javascript
 Fix the code to get the largest of three.
