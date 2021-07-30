@@ -1,5 +1,5 @@
 var ar = [121, 200, 313, 13, 979, 10, 202, 11];
-(function isPalindrome(arr) {
+var a =((arr) => {
   var b =[];
   var c;
   for(i=0; i<arr.length; i++) {
