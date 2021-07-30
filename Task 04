@@ -85,29 +85,26 @@ Output
 5. Return all the palindromes in an array
 
 Code
-let c = [121, 200, 313, 13, 979, 10, 202, 11];
-let a = function(b) {
-  var arr = [];
-
-  for (i=0; i<b.length; i++) {
-    if (isPalindrome(b[i]) === true) {
-      arr.push(b[i]);
+var ar = [121, 200, 313, 13, 979, 10, 202, 11];
+(function isPalindrome(arr) {
+  var b =[];
+  var c;
+  for(i=0; i<arr.length; i++) {
+    var a = arr[i];
+    var str = a + '';
+    var c = true;
+  for (j=0; j<str.length/2; j++) {
+    if(str[j] !== str[str.length-1-j]) {
+       c = false;
+       break;
     }
   }
-  return arr;
-
-function isPalindrome(d) {
-   let str = "" + d;
-   for (i=0; i<(str.length/2); i++) {
-     if (d[i] !== str.length -1 -i) {
-      return false;
-      break;
-     }  
-   }
-   return true;
- }
+  if (c == true) {
+    b.push(arr[i]);
+  }
 }
-console.log(a(c));
+console.log(b);
+})(ar);
 
 
 

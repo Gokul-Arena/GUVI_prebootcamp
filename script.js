@@ -1,11 +1,20 @@
-var arr = [1, 2, 3, 6, 8, 6, 1, 9, 10, 12, 13];
-var k = 3;
-k = arr.length % k;
-(function() {
- out = arr.slice(k + 1, arr.length);
- var count = out.length;
- for (var i = 0; i < k + 1; i++) {
- out[count] = arr[i];
- count += 1;
- }
- console.log(out);})();
+var ar = [121, 200, 313, 13, 979, 10, 202, 11];
+(function isPalindrome(arr) {
+  var b =[];
+  var c;
+  for(i=0; i<arr.length; i++) {
+    var a = arr[i];
+    var str = a + '';
+    var c = true;
+  for (j=0; j<str.length/2; j++) {
+    if(str[j] !== str[str.length-1-j]) {
+       c = false;
+       break;
+    }
+  }
+  if (c == true) {
+    b.push(arr[i]);
+  }
+}
+console.log(b);
+})(ar);
