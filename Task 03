@@ -491,3 +491,495 @@ console.log(cgpa);
 
 Output:
 7.6
+
+
+
+22. Write a loop that makes seven calls to console.log to output the following triangle:
+
+Code:
+let sum = "";
+for (i=0; i<7; i++) {
+    sum += "#";
+    console.log(sum);
+}
+
+
+
+23. Iterate through the string array and print its contents
+
+Code:
+var strArray= ["<option>Jazz</option>",
+,"<option>Blues</option>",
+,"<option>New Age</option>",
+,"<option>Classical</option>",
+,"<option>Opera</option>"];
+
+for (i=0; i<strArray.length; i++) {
+    console.log(strArray[i]);
+}
+
+
+
+24. Write a code to count the elements in the array . Don’t use length property. Declare an empty array;
+
+
+Code:
+var myarray=[11,22,33,44,55];
+var a = [];
+var count = 0;
+for(let x in myarray) {
+    a.push(myarray);
+    count++;
+}
+console.log(count);
+
+
+
+25. Create an array called foods holds the names of your top 20 favorite foods, starting with the best food. Foods variable holds the names of your top 20 favorite foods, starting with the best food.
+How can you find your fifth favorite food? Find the length of your foods array.
+
+Code:
+let foods = [ 'briyani', 'idli', 'dosai', 'pongal', 'poori', 'vadai', 'parotta', 'fried rice', 'upma', 'idiyappam', 'sambar',
+'rasam', 'curd', 'chapathi', 'noodles', 'kesari', 'laddu', 'poli', 'gulab jamun', 'rasagulla'];
+console.log(foods[4]);
+console.log(foods.length);
+
+
+
+26. Starting from the existing friends variable below, change the element that is currently “Mari” to “Munnabai”.
+
+Code:
+var friends = [
+  'Mari',
+  'MaryJane',
+  'CaptianAmerica',
+  'Munnabai',
+  'Jeff',
+  'AAK chandran'
+  ];
+  function dataHandling(input){
+  for (var i = 0; i < 1; i++) {
+  let temp = friends[i];
+  friends[i] = friends[i+3];
+  friends[i+3] = temp;
+  }
+  console.log(input);
+  }
+  dataHandling(friends);
+
+
+
+27. Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica.
+
+Code:
+const friends = [
+  'Mari',
+  'MaryJane',
+  'CaptianAmerica',
+  'Munnabai',
+  'Jeff',
+  'AAK chandran'
+];
+function dataHandling(input){
+for (var i = 0; i < 3; i++) {
+console.log(friends[i]);
+}
+}
+dataHandling(friends);
+
+
+28. Find the person is ur friend or not.
+
+Code:
+var friends = [
+  'Mari',
+  'MaryJane',
+  'CaptianAmerica',
+  'Munnabai',
+  'Jeff',
+  'AAK chandran'
+];
+function dataHandling(input, name){
+    if (input.includes(name)) {
+        return "friend";
+    }
+    else{
+      return "not friend";
+    }
+}
+let found = dataHandling(friends,'Jeff');
+console.log(found);
+
+
+29. We have two lists of friends below. Use array methods to combine them into one alphabetically-sorted list.
+
+Code:
+var friends1 = [
+  'Mari',
+  'MaryJane',
+  'CaptianAmerica',
+  'Munnabai',
+  'Jeff',
+  'AAK chandran'
+  ];
+  var friends2 = [
+  'Gabbar',
+  'Rajinikanth',
+  'Mass',
+  'Spiderman',
+  'Jeff',
+  'ET'
+  ];
+  function dataHandling(input1, input2){
+  var a = input1.concat(input2);
+  a.sort();
+  console.log(a);
+  }
+  dataHandling(friends1, friends2);
+
+
+  30. Get the first item, the middle item and the last item of the array
+
+
+  Code:
+var arr = [
+  "AAK chandran",
+  "CaptianAmerica",
+  "ET",
+  "Gabbar",
+  "Jeff",
+  "Jeff",
+  "Mari",
+  "MaryJane",
+  "Mass",
+  "Munnabai",
+  "Rajinikanth",
+  "Spiderman"
+];
+console.log(arr[0]);
+console.log(arr[arr.length-1]);
+if(arr.length % 2 !== 0) {
+  console.log(arr[parseInt((arr.length/2)-1)]);
+}
+else{
+  console.log(arr[(arr.length/2)-1]+", "+ arr[((arr.length/2)-1)+1]);
+}
+
+
+31. Add your name to the end of the friends array, and add another name to beginning.
+
+Code:
+var arr = [
+  "AAK chandran",
+  "CaptianAmerica",
+  "ET",
+  "Gabbar",
+  "Jeff",
+  "Jeff",
+  "Mari",
+  "MaryJane",
+  "Mass",
+  "Munnabai",
+  "Rajinikanth",
+  "Spiderman"
+];
+arr.push("Gokul");
+console.log(arr);
+
+
+32. Add Mr or Ms to the names in the friends array.
+
+
+Code:
+var arr = [
+  "AAK chandran",
+  "CaptianAmerica",
+  "ET",
+  "Gabbar",
+  "Jeff",
+  "Jeff",
+  "Mari",
+  "MaryJane",
+  "Mass",
+  "Munnabai",
+  "Rajinikanth",
+  "Spiderman"
+];
+var sum = "";
+var b =[];
+for (let a in arr) {
+  b.push("Mr "+arr[a]);
+}
+console.log(b);
+
+
+33.  Concat all the names the friends array and return as comma “,” seperated string.
+
+Code:
+var arr = [
+  "AAK chandran",
+  "CaptianAmerica",
+  "ET",
+  "Gabbar",
+  "Jeff",
+  "Jeff",
+  "Mari",
+  "MaryJane",
+  "Mass",
+  "Munnabai",
+  "Rajinikanth",
+  "Spiderman"
+];
+var sum = "";
+var b =[];
+for (let a in arr) {
+  sum += arr[a];
+  if(a<arr.length-1){
+    sum+=", ";
+  }
+}
+console.log((sum));
+
+
+34. Find the friends names who has letter ‘a’ and return the list.
+
+Code:
+var arr = [
+  "AAK chandran",
+  "CaptianAmerica",
+  "ET",
+  "Gabbar",
+  "Jeff",
+  "Jeff",
+  "Mari",
+  "MaryJane",
+  "Mass",
+  "Munnabai",
+  "Rajinikanth",
+  "Spiderman"
+];
+var sum = "";
+var b =[];
+for (let a in arr) {
+  if(arr[a].includes("a")){
+    b.push(arr[a]);
+  }
+}
+console.log((b));
+
+
+35. Find the avg length of all the friends names. Get the individual length of the names and do the avg.
+
+Code:
+var arr = [
+  "AAK chandran",
+  "CaptianAmerica",
+  "ET",
+  "Gabbar",
+  "Jeff",
+  "Jeff",
+  "Mari",
+  "MaryJane",
+  "Mass",
+  "Munnabai",
+  "Rajinikanth",
+  "Spiderman"
+];
+var sum = 0;
+for (let a in arr) {
+    var b = arr[a].length;
+    sum += b;
+}
+console.log(sum/arr.length);
+
+
+36. Find the names and return the list starting with letter M
+
+Code:
+var arr = [
+  "AAK chandran",
+  "CaptianAmerica",
+  "ET",
+  "Gabbar",
+  "Jeff",
+  "Jeff",
+  "Mari",
+  "MaryJane",
+  "Mass",
+  "Munnabai",
+  "Rajinikanth",
+  "Spiderman"
+];
+var sum = "";
+var b =[];
+for (let a in arr) {
+  if(arr[a][0] == ("M")){
+    console.log(arr[a]);
+  }
+}
+
+
+37. Find the name with max characters and return the name.
+
+Code:
+var arr = [
+  "AAK chandran",
+  "CaptianAmerica",
+  "ET",
+  "Gabbar",
+  "Jeff",
+  "Jeff",
+  "Mari",
+  "MaryJane",
+  "Mass",
+  "Munnabai",
+  "Rajinikanth",
+  "Spiderman"
+];
+var sum = 0;
+var large = arr[0];
+for (let a in arr) {
+    if (arr[a].length > large.length){
+        large = arr[a];
+    }
+}
+console.log(large);
+
+
+38. Find the name with min characters and return the name.
+
+Code:
+var arr = [
+  "AAK chandran",
+  "CaptianAmerica",
+  "ET",
+  "Gabbar",
+  "Jeff",
+  "Jeff",
+  "Mari",
+  "MaryJane",
+  "Mass",
+  "Munnabai",
+  "Rajinikanth",
+  "Spiderman"
+];
+var small = arr[0];
+for (let a in arr) {
+    if (arr[a].length < small.length){
+        small = arr[a];
+    }
+}
+console.log(small);
+
+
+39. Find the average in the array below.
+Make sure you add only the numbers and do avg.
+
+Code:
+const friendsInfo = [6, 12, 'Mari', 1, true, 'Munnabai', '200', 'CaptianAmerica', 8, 10];
+var sum = 0;
+var count=0;
+for(let i in friendsInfo){
+    if (typeof(friendsInfo[i]) == 'number') {
+        count++;
+        sum+=friendsInfo[i];
+    }
+}
+console.log(sum/count);
+
+
+40. Print the contents of the input variable.
+
+Code:
+var input = [
+  ['0001', 'Roman Alamsyah','Bandar Lampung', '21/05/1989', 'Membaca'],
+  ['0002', 'Dika Sembiring', 'Medan', '10/10/1992', 'Bermain Gitar'],
+  ['0003', 'Winona', 'Ambon', '25/12/1965', 'Memasak'],
+  ['0004', 'Bintang Senjaya', 'Martapura', '6/4/1970', 'Berkebun']
+  ]
+  function dataHandling(input){
+  for (var i = 0; i < input.length; i++) {
+      var a = input[i];
+      for(var j = 0; j< a.length; j++){
+          console.log(a[j]);
+      }
+  }
+  }
+  dataHandling(input);
+
+
+Objects:
+
+41. What is the output?
+
+Code:
+myobject = {1:"one",'11':1,'name':'arun'}
+console.log(myobject['11']); 
+console.log(myobject.name);
+
+Output:
+1
+arun
+
+
+42. Add a new key value pair to myobject.
+key : ten
+value : ten
+
+Code:
+myobject = {1:'one','11':1,'name':'arun'}
+myobject.ten = "ten";
+console.log(myobject);
+
+Output:
+{"1":"one","11":1,"name":"arun","ten":"ten"} // Quotes might not get displayed that fine.
+
+
+43. Write out an object literal to represent the data below.
+Guvi, Geek, 6, IIT-M RP,Chennai.
+
+Code:
+function company(firstName, lastName, No, Address, City){
+  console.log({
+      firstName,
+      lastName,
+      No,
+      Address,
+      City
+  })
+}
+company('Guvi', 'Geek', '6', 'IIT-M RP','Chennai');
+
+
+44. How would you represent the following data using a combination of object literals and arrays? (You can describe a strategy without typing or writing out the whole thing.)
+Guvi, Geek, 6, IIT-M RP,Chennai.
+Amazon, Inc, 31, SP Infocity, Chennai.
+Google, Alphabet, 34 Amphitheater Parkway, MountainView.
+Tesla, Inc , 32, 333 Santana Row,San Jose.
+
+Code:
+let a = "name";
+var i = 0;
+
+const firstName = {
+    [a + ++i]: "..",
+        "    :   "
+}
+
+const lastName ={
+    ":"
+}
+
+const No = {
+
+}
+
+const Address = {
+
+}
+
+const city = {
+
+}
+
+console.log(firstName.a1);   // accessing
