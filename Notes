@@ -21,9 +21,10 @@ let bar = () => {
 };
 bar()
 
-
+--------------------------------------------------
 
 30-07-2021
+
 class Movie {
   constructor (title, studio, rating="PG") {
       this.title = title;
@@ -49,3 +50,8 @@ let arr = new Movie ("Casino Royale", "Eon Productions", "PG13");
 let a = new Movie("a", "b", "PG");
 
 console.log(Movie.getPG(a));
+
+--------------------------------------------------
+
+02-08-2021
+
