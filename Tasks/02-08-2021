@@ -1,0 +1,385 @@
+1. Fix the bugs in below snippet
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document guvi</title>
+  </head>
+  <body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div>Guvi Geek Network</div>
+  </body>
+</html>
+
+
+2. Try the below one
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document guvi</title>
+  </head>
+  <body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div>Guvi Geek Network</div>
+  </body>
+</html>
+
+
+3. Design a contact us form with all fields as required.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(255, 47, 144);
+  color: black;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: hotpink;
+}
+.container{
+    border-radius: 5px;
+    background-color: rgb(80, 64, 224);
+    padding:40px;
+}
+        </style>
+    </head>
+    <body>
+        <h2>Contact Us Form</h2>
+        <div class="container">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname!" placeholder="Your First Name">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname!" placeholder="Your Last Name">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email!" placeholder="example@email.com">
+
+            <label for="mobile">Mobile</label>
+            <input type="text" id="mobile" name="mobile!" placeholder="Your mobile number">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Your Query" style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </div>
+    </body>
+</html>
+
+
+4.  Use certain HTML elements to display the following in a HTML page.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+      <ul style="list-style-type:disc">
+        <li>Programming Language</li>
+        <ul style="list-style-type:circle">
+    <li>Javascript</li>
+    <ul>
+        a. Angular </br>
+        b. React </br>
+        c. Vue.js </br>
+    </ul>
+    <li>Python</li>
+    <ul>
+        a. Django Framework </br>
+        b. Flask Framework </br>
+    </ul>
+    <li>Java</li>
+    <ul>
+        a. Spring </br>
+        b. Maven </br>
+        c. Hibernate </br>
+    </ul>
+    </ul>
+    <li>Database</li>
+    <ul style="list-style-type:circle">
+    <li>MySQL</li>
+    <li>MongoDB</li>
+    <li>Cansandra</li>
+    </ul>
+    </ul>
+  </body>
+</html>
+
+
+5. Create an element that helps you to open the https://google.com in separate new tab.
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> Opening https://www.google.com in new tab</h2>
+        <a href="https://www.google.com" target="_blank">Go to www.google.com</a>
+    </body>
+</html>
+
+
+6. In the form, add two radio buttons with grouping them for employee type(Salaried and own business)
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Radio button for employee type</h1>
+        <p>Employee type:</p>
+          <input type="radio" id="salaried" name="employee" value="Salaried">
+          <label for="salaried">Salaried</label><br>
+          <input type="radio" id="ownbusiness" name="employee" value="Own Business">
+        <label for="ownbusiness">Own Business</label><br>
+    </body>
+</html>
+
+
+8. Use the table tag to design given image.
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 50px;
+          text-align: center;    
+        }
+        </style>
+        </head>
+    <body>
+<table style="width:50%">
+    <caption>Health Chart</caption>
+    <tr>
+<th rowspan="2">State of Health</th>
+<th colspan="2">Fasting Value</th>
+<th>After Eating</th>
+    </tr>
+    <tr>
+        <th>Minimum</th>
+        <th>Maximum</th>
+        <th>2 hours after eating</th>
+    </tr>
+    <tr>
+        <td>Healthy</td>
+        <td>70</td>
+        <td>100</td>
+        <td>Less than 140</td>
+    </tr>
+    <tr>
+        <td>Pre-Diabetes</td>
+        <td>101</td>
+        <td>126</td>
+        <td>140 to 200</td>
+    </tr>
+    <tr>
+        <td>Diabetes</td>
+        <td>More than 126</td>
+        <td>N/A</td>
+        <td>More than 200</td>
+    </tr>
+</table>
+    </body>
+</html>
+
+
+9. Write HTML input tags snippet to show default values for all Form elements.
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>HTML Form Elements</h2>
+
+        <h3>The input element</h3>
+        <label for="name">Name:</label>
+<input type="text" id="name" name="name" value="Gokul V">
+
+<h3>The label element</h3>
+<label for="nam">Gender:</label>
+<input type="text" id="nam" name="nam" value="Male">
+
+<h3>The select element</h3>
+<label for="Qualification">Qualification:</label>
+<select id="Qualification" name="qualification">
+  <option value="UG">UG</option>
+  <option value="PG" selected>PG</option>
+  <option value="PhD">PhD</option>
+</select>
+
+<h3>The textarea element</h3>
+<textarea name="message" rows="10" cols="30">I've been studying fullstack course currently.</textarea>
+
+<h3>The button element</h3>
+<button type="button" onclick="alert('Hello This is Gokul!')">Click Me!</button>
+
+<h3>The fieldset and legend elements</h3>
+<fieldset>
+<legend>Details:</legend>
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name" value="Gokul V"><br>
+<label for="nam">Gender:</label><br>
+<input type="text" id="nam" name="nam" value="Male"><br>
+</fieldset>
+
+<h3>The datalist element</h3>
+<input list="Hobby" name="name" value="Browsing">
+<datalist id="Hobby">
+  <option value="Reading"></option>
+  <option value="Browsing" selected></option>
+  <option value="Playing"></option>
+</datalist>
+
+<h3>The output element</h3>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+
+<input type="number" id="a" name="a" value="50">
++
+<input type="number" id="b" name="b" value="50">
+=
+<output name="x" for="a b">60</output>
+
+    </body>
+</html>
+
+
+10. In your, HTML page add the below line and Highlight it without using any CSS.
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <ul>
+            <li><mark>"HTML & CSS is awesome"</mark></li>
+        </ul>
+    </body>
+</html>
+
+
+11. Create an HTML page, which should contain all types of input elements.
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>HTML Input Elements</h2>
+
+    <h3>Input Type text</h3>
+    <label for="fname">First name:</label><br />
+    <input type="text" id="fname" name="fname" /><br />
+
+    <h3>Input Type Password & Input type Submit</h3>
+    <label for="pwd">Password:</label><br />
+    <input type="password" id="pwd" name="pwd" /><br /><br />
+    <input type="submit" value="Submit" />
+
+    <h3>Input Type Reset</h3>
+    <form>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" />
+    </form>
+
+    <h3>Input Type Radio</h3>
+      <input type="radio" id="salary" name="fav_language" value="CSS" />  
+    <label for="salary">Salary</label><br />
+     
+    <input type="radio" id="business" name="fav_language" value="JavaScript" />
+      <label for="business">Own Business</label><br /><br />
+
+    <h3>Input Type Checkbox</h3>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+    <label for="vehicle1"> I have a bike</label><br />
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+    <label for="vehicle2"> I have a car</label><br />
+
+    <h3>Input Type Button</h3>
+    <input
+      type="button"
+      onclick="alert('Hello, this is Gokul!')"
+      value="Click Me!"
+    />
+
+    <h3>Input Type Color</h3>
+    <label for="color">Select your colour:</label>
+    <input type="color" id="color" name="favcolor" value="#ff0000" />
+    <input type="submit" value="Submit" />
+
+    <h3>Input type Date</h3>
+    <label for="date">Enter Date:</label>
+    <input type="date" id="date" name="Date" />
+    <input type="submit" value="Submit" /><b><br></b>
+
+    <h3>Input type Datetime-local</h3>
+    <label for="date">Enter Date:</label>
+    <label for="birthdaytime">Birthday (date and time):</label>
+    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+    <h3>Input type Email</h3>
+    <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+
+  
+  <h3>Input type File</h3>
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile">
+
+  <h3>Input type Hidden</h3>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="hidden" id="custId" name="custId" value="3487">
+  <input type="submit" value="Submit">
+
+  <h3>Input type Month</h3>
+  <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+
+  <h3>Input type Number</h3>
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+  <h3>Input type Range</h3>
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+
+  <h3>Input type Search</h3>
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+
+  <h3>Input type Tel</h3>
+  <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+  <h3>Input type Time</h3>
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt">
+
+  <h3>Input type Url</h3>
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage">
+
+  <h3>Input type Week</h3>
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+
+  </body>
+</html>

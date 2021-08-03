@@ -55,3 +55,171 @@ console.log(Movie.getPG(a));
 
 02-08-2021
 
+html tables:
+
+<table style="border:10px solid black;text-align: center;">
+        <tr>
+            <th>Sl.No.</th>
+            <th>Trainee Name</th>
+            <th>Mobile Number</th>
+        </tr>
+        <tr>
+            <td>Suman Gangopadhyay</td>
+            <td>suman@example.com</td>
+            <td>9934212345</td>
+        </tr>
+    </table>
+
+Forms:
+<form action="" method="GET">
+        <!-- form created with line breaks -->
+        <input type="text" name="first_name" placeholder="Enter your first name please" > <br/>
+        <input type="text" name="second_name" placeholder="second name please" > <br/>
+        <input type="submit" value="submit" >
+
+    </form>
+
+<form action="https://www.google.in%22 method="GET">
+        <!-- form created with line breaks -->
+        <input type="text" name="first_name" placeholder="Enter your first name please" > <br/>
+        <input type="text" name="second_name" placeholder="second name please" > <br/>
+        <input type="submit" value="submit" >
+
+    </form>
+
+--------------------------------------------------
+
+03-08-2021
+
+<form action="">
+        <label for="option_1">Gender :</label>
+        <select name="option_1" id="option_1">
+            <option value="pizza">Male</option>
+            <option value="pizza">Female</option>
+        </select><br/>
+        <label for="addresss">Permanent Address : </label>
+        <!-- TEXTAREA -->
+        <textarea name="address" id="address" cols="20" rows="20" placeholder="Your current address">
+           
+        </textarea>
+
+    </form>
+
+<form action="https://google.com%22 method="GET">
+        <button type="submit" onclick="alert('I love Pizza !')">Suman</button>
+
+    </form>
+
+
+Resume html Document
+<!DOCTYPE html>
+<html>
+    <body style="align:center">
+    <h2>Resume</h2>
+    <label for="name">Name:</label><br>
+    <input type=text id="name" name="name"><br><br>
+    <label for="name">Gender:</label><br>
+    <input type=text id="name" name="name"><br><br>
+    <label for="name">Age:</label><br>
+    <input type=text id="name" name="name"><br><br>
+    <label for="name">Email:</label><br>
+    <input type=text id="name" name="name"><br><br>
+    <label for="name">Mobile:</label><br>
+    <input type=text id="name" name="name"><br><br>
+    <label for="Qualification">Qualification:</label>
+    <select id="Qualification" name="qualification">
+      <option value="UG">UG</option>
+      <option value="PG" >PG</option>
+      <option value="PhD">PhD</option>
+      </select><br><br>
+      <label for="name">Major:</label><br>
+      <input type=text id="name" name="name"><br><br>
+      <h4>About yourself</h4>
+      <textarea name="message" rows="10" cols="50">Say about yourself.</textarea>
+
+    </select>
+    </body>
+</html>
+
+
+<!-- CSS - CASCADING STYLE SHEET -->
+   1.) Inline
+   2.) Internally
+   3.) Externally
+
+/* INTERNAL CSS  */ = Comments
+
+
+<div id="name" class="class_1 class_2">
+      Suman Gangopadhyay
+  </div>
+  <div id="place" class="class_1 class_2">
+      Bangalore
+  </div>
+
+  # is to catch a HTML tag with ID
+. is to catch a HTML tag with CLASS
+
+<style>
+        /* INTERNAL CSS  */
+        div{
+            background-color: bisque;
+        }
+
+        #name{
+            background-color: blueviolet;
+        }
+        .class_1{
+            color: chartreuse;
+        }
+    </style>
+
+
+
+    <style>
+        /* INTERNAL CSS  */
+        div{
+            background-color: bisque;
+        }
+
+        #name{
+            background-color: blueviolet;
+        }
+        .class_1{
+            color: chartreuse;
+        }
+
+        .class_2{
+            text-align: center;
+        }
+    </style>
+
+
+
+border: 2px solid yellow;
+
+
+#first{
+           /* HOW TO MAKE A DIV CIRCULAR */
+           background-color: crimson;
+           width: 100px;
+           height: 100px;
+           border-radius: 50%;
+       }
+<div id="first"></div>
+
+
+
+background-image: url("img/volcano.jpg");
+
+#second{
+           width: 300px;
+           height: 300px;
+           border-radius: 20%;
+       }
+
+<img id="second" src="/img/volcano.jpg" alt="">
+
+margin-bottom: 20px;
+            margin-left: 20px;
+            margin-top:15px;
