@@ -1,106 +1,53 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      div {
+        width: 450px;
+        height: 400px;
+        border: 10px;
+        border-style: solid;
+        border-color: black;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+      }
+      h2 {
+        color: white;
+        background-color: red;
+        text-align: center;
+      }
+      p {
+        text-decoration: overline;
+      }
+    </style>
+  </head>
   <body>
-    <h2>HTML Input Elements</h2>
-
-    <h3>Input Type text</h3>
-    <label for="fname">First name:</label><br />
-    <input type="text" id="fname" name="fname" /><br />
-
-    <h3>Input Type Password & Input type Submit</h3>
-    <label for="pwd">Password:</label><br />
-    <input type="password" id="pwd" name="pwd" /><br /><br />
-    <input type="submit" value="Submit" />
-
-    <h3>Input Type Reset</h3>
-    <form>
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" /><br /><br />
-      <input type="submit" value="Submit" />
-      <input type="reset" />
-    </form>
-
-    <h3>Input Type Radio</h3>
-      <input type="radio" id="salary" name="fav_language" value="CSS" />  
-    <label for="salary">Salary</label><br />
-     
-    <input type="radio" id="business" name="fav_language" value="JavaScript" />
-      <label for="business">Own Business</label><br /><br />
-
-    <h3>Input Type Checkbox</h3>
-    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-    <label for="vehicle1"> I have a bike</label><br />
-    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-    <label for="vehicle2"> I have a car</label><br />
-
-    <h3>Input Type Button</h3>
-    <input
-      type="button"
-      onclick="alert('Hello, this is Gokul!')"
-      value="Click Me!"
-    />
-
-    <h3>Input Type Color</h3>
-    <label for="color">Select your colour:</label>
-    <input type="color" id="color" name="favcolor" value="#ff0000" />
-    <input type="submit" value="Submit" />
-
-    <h3>Input type Date</h3>
-    <label for="date">Enter Date:</label>
-    <input type="date" id="date" name="Date" />
-    <input type="submit" value="Submit" /><b><br></b>
-
-    <h3>Input type Datetime-local</h3>
-    <label for="date">Enter Date:</label>
-    <label for="birthdaytime">Birthday (date and time):</label>
-    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
-
-    <h3>Input type Email</h3>
-    <label for="email">Enter your email:</label>
-  <input type="email" id="email" name="email">
-
-  
-  <h3>Input type File</h3>
-  <label for="myfile">Select a file:</label>
-  <input type="file" id="myfile" name="myfile">
-
-  <h3>Input type Hidden</h3>
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <input type="hidden" id="custId" name="custId" value="3487">
-  <input type="submit" value="Submit">
-
-  <h3>Input type Month</h3>
-  <label for="bdaymonth">Birthday (month and year):</label>
-  <input type="month" id="bdaymonth" name="bdaymonth">
-
-  <h3>Input type Number</h3>
-  <label for="quantity">Quantity (between 1 and 5):</label>
-  <input type="number" id="quantity" name="quantity" min="1" max="5">
-
-  <h3>Input type Range</h3>
-  <label for="vol">Volume (between 0 and 50):</label>
-  <input type="range" id="vol" name="vol" min="0" max="50">
-
-  <h3>Input type Search</h3>
-  <label for="gsearch">Search Google:</label>
-  <input type="search" id="gsearch" name="gsearch">
-
-  <h3>Input type Tel</h3>
-  <label for="phone">Enter your phone number:</label>
-  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-
-  <h3>Input type Time</h3>
-  <label for="appt">Select a time:</label>
-  <input type="time" id="appt" name="appt">
-
-  <h3>Input type Url</h3>
-  <label for="homepage">Add your homepage:</label>
-  <input type="url" id="homepage" name="homepage">
-
-  <h3>Input type Week</h3>
-  <label for="week">Select a week:</label>
-  <input type="week" id="week" name="week">
-
+    <div>
+      <h2>Yes! I want to subscribe to MAG-O-ZINE</h2>
+      <p>First Name</p>
+      <p>Last Name</p>
+      <hr />
+      Address
+      <p>City</p>
+      <p>State</p>
+      <p>Zip</p>
+      <h4>
+        Subscribe for:
+        <input type="checkbox" id="1" name="1" value="B" checked />
+        <label for="1">1 year ($19.95)</label>
+        <input type="checkbox" id="1" name="1" value="B" />
+        <label for="1">2 years ($35.00)</label><br />
+        Send me more information about:<br />
+        <ul>
+          <input type="checkbox" checked />
+          Computer-Zine<br />
+          <input type="checkbox" />
+          Fishing-Zine<br />
+          <input type="checkbox" checked />
+          Cat-O-Zine
+        </ul>
+      </h4>
+    </div>
   </body>
 </html>
