@@ -223,3 +223,174 @@ background-image: url("img/volcano.jpg");
 margin-bottom: 20px;
             margin-left: 20px;
             margin-top:15px;
+
+--------------------------------------------------
+
+04-08-2021
+
+//linking external style sheets
+<link rel="stylesheet" href="/css/index.css">
+
+<div id="first"></div><div id="second"></div>
+
+
+//css file
+#first{width: 200px;height: 200px;background-color: crimson;display: inline-block;}#second{width: 200px;height: 200px;background-color: darkblue;display: inline-block;}
+
+#first{width: 200px;height: 200px;background-color: crimson;display: inline-block;}#second{width: 200px;height: 200px;background-color: darkblue;display: inline-block;float: right;}
+
+
+
+<div id="first"><div id="name"></div></div>
+
+#first{width: 200px;height: 200px;background-color: crimson;position: relative;}#name{width: 50px;height: 50px;top: 50%;left: 50%;background-color:blue;position: absolute;transform: translate(-50%, -50%);}
+
+<header><ul><li><a href="#">HOME</a></li><li><a href="#">EMPLYMENT</a></li><li><a href="#">ABOUT US</a></li><li><a href="#">GUVI</a></li><li><a href="#">CONTACT US</a></li></ul>
+
+
+/* CSS FOR HORIZONTAL BAR */header{font-family: Arial, Helvetica, sans-serif;width: auto;background-color: yellowgreen;padding-top: 10px;padding-bottom: 10px;padding-left:10px;}header li{display: inline-block;}header li a{text-decoration: none;color: yellow;padding-right: 40px;}
+
+<nav id="left_nav_bar"><ul><li><a href="#"">ADMIN</a></li><li><a href="#"">STUDENTS</a></li><li><a href="#"">TEACHERS</a></li></ul></nav>
+
+/* VERTICAL NAV BAR CSS */#left_nav_bar{display: inline-block;padding-right:30px;}#left_nav_bar li a{color: yellow;text-decoration: none;}#left_nav_bar li{background-color: yellowgreen;list-style-type: none;padding-top:20px;padding-bottom: 20px;}#left_nav_bar li:hover{background-color: black;cursor: pointer;font-family: 30px;}
+
+
+/* VERTICAL NAV BAR CSS */#left_nav_bar{display: inline-block;padding-right:30px;}#left_nav_bar li a{color: yellow;text-decoration: none;}#left_nav_bar li{background-color: yellowgreen;list-style-type: none;padding-top:20px;padding-bottom: 20px;}#left_nav_bar li:hover{background-color: black;cursor: pointer;font-family: 30px;}#left_nav_bar{text-transform: capitalize;height: auto;width: 200px;}
+
+
+/* VERTICAL NAV BAR CSS */*{padding: 0;margin: 0;}#left_nav_bar{display: inline-block;padding-right:30px;}#left_nav_bar li a{color: yellow;text-decoration: none;}#left_nav_bar li{background-color: yellowgreen;list-style-type: none;padding-top:20px;padding-bottom: 20px;}#left_nav_bar li:hover{background-color: black;cursor: pointer;font-family: 30px;}#left_nav_bar{text-transform: capitalize;height: auto;width: 200px;}
+
+--------------------------------------------------
+
+05-08-2021
+
+<!-- DROPDOWN MENU USING HTML AND CSS -->
+    <div id="dropdown_menu">
+        <button id="btn1">List of Foods</button>
+        <div id="menu_content">
+            <a href="#">Pizza</a>
+            <a href="#">Paneer Pasanda</a>
+            <a href="#">Galauti Kabab</a>
+            <a href="#">Kolkata Biryani</a>
+            <a href="#">French Omellette</a>
+        </div>
+    </div>
+
+
+<style>
+        #btn1 {
+            background-color: chartreuse;
+            color: black;
+            cursor: pointer;
+            border-radius: 10%;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        #dropdown_menu:hover #btn1 {
+            background-color: black;
+            color: red;
+        }
+
+        #dropdown_menu {
+            position: relative;
+            display: inline-block;
+        }
+
+        #menu_content {
+            display: none;
+            position: absolute;
+            background-color: wheat;
+            width: 160px;
+        }
+
+        #menu_content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+
+        #menu_content a:hover {
+            background-color: yellow;
+        }
+
+        #dropdown_menu:hover #menu_content {
+            display: block;
+        }
+    </style>
+
+<!-- CSS FLEXBOX -->
+    <div id="container">
+        <div id="first"></div>
+        <div id="second"></div>
+    </div>
+
+#container{
+    width: auto;
+    height: 300px;
+    background-color: yellow;
+    display: flex;
+}
+
+#first{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+}
+
+#second{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+}
+
+
+#container{
+    width: auto;
+    height: 300px;
+    background-color: yellow;
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+#first{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#second{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+}
+
+
+
+<section>
+        <img class="pic" src="/img/a.jpg" alt="">
+        <img class="pic" src="/img/b.jpg" alt="">
+        <img class="pic" src="/img/c.jpg" alt="">
+        <img class="pic" src="/img/d.jpg" alt="">
+        <img class="pic" src="/img/e.jpg" alt="">
+    </section>
+section{
+    width: auto;
+    height: 200px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pic{
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    margin:auto;
+}

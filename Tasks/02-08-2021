@@ -180,14 +180,14 @@ input[type=submit]:hover {
   </head>
   <body>
     <div>
-      <h2>Yes! I want to subscribe to MAG-O-ZINE</h2>
-      <p>First Name</p>
-      <p>Last Name</p>
+      <h2>Yes! I want to subscribe to <i>MAG-O-ZINE</i></h2><br><br>
+      <p style="display:inline">First Name</p>
+      <p style="display:inline; position:relative; left:180px;">Last Name</p><br><br><br>
       <hr />
-      Address
-      <p>City</p>
-      <p>State</p>
-      <p>Zip</p>
+      Address<br><br><br>
+      <p style="display:inline; ">City</p>
+      <p style="display:inline; position:relative; left:80px;">State</p>
+      <p style="display:inline; position:relative; left:180px;"">Zip</p><br>
       <h4>
         Subscribe for:
         <input type="checkbox" id="1" name="1" value="B" checked />
@@ -195,7 +195,7 @@ input[type=submit]:hover {
         <input type="checkbox" id="1" name="1" value="B" />
         <label for="1">2 years ($35.00)</label><br />
         Send me more information about:<br />
-        <ul>
+        <ul style="margin:5px 0px">
           <input type="checkbox" checked />
           Computer-Zine<br />
           <input type="checkbox" />
