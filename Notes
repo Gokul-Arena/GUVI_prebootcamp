@@ -394,3 +394,38 @@ section{
     border-radius: 50%;
     margin:auto;
 }
+
+--------------------------------------------------
+
+06-08-2021
+
+<div class="container">
+        <img src="img/a.jpg">
+        <img src="img/b.jpg">
+        <img src="/img/c.jpg">
+
+    </div>
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+img{
+	width:200px;
+	height: 200px;
+	/* border-radius: 50%; */
+	margin-top: 40px;
+	margin-right:40px;
+	margin-left:40px;
+	transition: border-radius 10s;
+}
+
+img:hover{
+	border-radius: 50%;
+}
