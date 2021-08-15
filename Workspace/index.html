@@ -1,56 +1,399 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        #first{
-            width : auto;
-            height:auto;
-            background-color:brown
-        }
+ 
+   .head{
+       position:relative;
+       border: 2px solid black;
+       margin-left: 25%;
+       margin-right: 25%;
+       height: 2500px;
+       background-color: rgb(1, 22, 43);
+
+   }
+  
+  .head1{
+      position:absolute;
+      border: 2px solid black;
+      height: 800px;
+      width: 50%;
+      
+  }
+  .Head2{
+    position:absolute;
+    
+      height: 800px;
+      width:95%;
+  }
+  table{
+      position: relative;
+  }
+  .tr1{
+      position: absolute;
+      color: white;
+      border: 2px solid black;
+      top:250px;
+      left:130px;
+      width: 35%;
+    background-color:orange;
+      height: 300px;
+    }
+    .tr2{
+      position: absolute;
+      color: white;
+      border: 2px solid black;
+      top:250px;
+      left:396px;
+      width: 35%;
+      height: 300px;
+      background-color: lightskyblue;
+    }
+.table,p{
+    font-size: 16px;
+    text-align: center;
+}
+.table,h1{
+    font-size: 40px;
+    text-align: center;
+
+}
+.table,h2{
+    font-size: 30px;
+}
+   .SubTitle{
+       position:absolute;
+       left:200px;
+       Bottom:2300px;
+       left:270px;
+       font-family: fantasy;
+       font-size: 20px;
+       color: white;
+
+   }
+   .Title{
+     position: relative;
+     Top: 20px;
+   
+     font-size: 80px;
+     left:60px;
+     color:crimson;
+     font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+    font-stretch:extra-expanded;
+     
+   }
+   .fa-users{
+    background-color:lightblue;
+    border-radius: 50%;
+    border: 4px solid white;
+    padding: 10px;
+    font-size: 55px;
+    position: absolute;
+    Top: 94px;
+    left:150px;
+   }
+   .tr3{
+       background-color: crimson;
+       width: 70%;
+       border: 2px solid black;
+       position:absolute;
+       top:600px;
+       height: 200px;
+       left:130px;
+       
+
+   }
+   .headt3{
+       position:absolute;
+       left:25px;
+       top:15px;
+       
+   }
+   .pt3{
+       position:absolute;
+       top:59%;
+       left:25px;
+       color:white;
+   }
+   .iconst3{
+       position:absolute;
+       left:54%;
+       word-spacing: 1.9em;
+       top:45px;
+     
+   }
+   .iconstp{
+       position:absolute;
+       left:-5px;
+   }
+   .tr4{
+       position: absolute;
+       left:130px;
+       height:300px;
+       top: 850px;
+       width: 70%;
+       border: 2px solid black;
+       background-color:lightskyblue;
+   }
+   .fa-window-close{
+       position: absolute;
+       left:200px;
+       font-size: 45px;
+       top:12px;
+   }
+   .tr5{
+    position: absolute;
+       left:130px;
+       height:300px;
+       top: 1200px;
+       width: 34.9%;
+       border: 2px solid black;
+       background-color:crimson;
+   }
+   .tr6{
+    position: absolute;
+       left:390px;
+       height:300px;
+       top: 1200px;
+       width: 34.9%;
+       border: 2px solid black;
+       background-color:orange;
+   }
+   .tr7{
+
+       position: absolute;
+       left:130px;
+       height:170px;
+       top: 1610px;
+       width:530px;
+       border: 2px solid black;
+       background-color:lightskyblue;
+   }
+
+   .tr8{
+       position: absolute;
+       left:130px;
+       height:170px;
+       top: 1870px;
+       width:530px;
+       border: 2px solid black;
+       background-color:orange;  
+   }
+
+   .tr9{
+       position: absolute;
+       left:130px;
+       height:300px;
+       top:2110px;
+       width:34.9%;
+       border: 2px solid black;
+       background-color:lightskyblue;  
+   }
+
+   .tr10{
+    position: absolute;
+       left:390px;
+       height:300px;
+       top:2110px;
+       width:35%;
+       border: 2px solid black;
+       background-color:crimson;  
+   } 
+   
+   
     </style>
 </head>
-
 <body>
-    <div class="container" id="first">
-        <h1>Gokul</h1>
-        <ul style="list-style-type:disc">
-            <li>Programming Language</li>
-            <ul style="list-style-type:circle">
-        <li>Javascript</li>
-        <ul>
-            a. Angular </br>
-            b. React </br>
-            c. Vue.js </br>
-        </ul>
-        <li>Python</li>
-        <ul>
-            a. Django Framework </br>
-            b. Flask Framework </br>
-        </ul>
-        <li>Java</li>
-        <ul>
-            a. Spring </br>
-            b. Maven </br>
-            c. Hibernate </br>
-        </ul>
-        </ul>
-        <li>Database</li>
-        <ul style="list-style-type:circle">
-        <li>MySQL</li>
-        <li>MongoDB</li>
-        <li>Cansandra</li>
-        </ul>
-        </ul>
-    </div>
-    
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <diV class="head">
+        <h1 class="Title" style="text-align: center;">OBESITY</h1>
+        <p class="SubTitle" style="text-align: center;"> CHILDHOOD STATISTICS</p>
+        <i class="fa fa-users" aria-hidden="true"></i>
+        <table>
+            <tr>
+                <div class="tr1">
+                  <div style="color:black;font-size:40px;text-align:center;top:7px;left:90px;position: absolute;top:10pxpx">
+                    <i class="fa fa-male" aria-hidden="true"></i>
+                    <i class="fa fa-male" aria-hidden="true"></i>
+                    <i class="fa fa-female" style="color:crimson ;" aria-hidden="true"></i>
+                    </div> <br><br>
+                  <h1 style="word-spacing:0.5em ;text-align:center;color: rgb(255, 255, 255); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">1  IN 3</h1>
+                  <p style="margin-top: -18px;">children and <br>
+                  adoslesents(ages 2-19)<br>
+                  <b>ARE OVERWIEGT <br> OR OBESE </b><br>
+                  and almose <b> None </b> meet <br> recommended healthy diet <br> and phyical activity amount</p>
+                  
+                </div>
 
+            </tr>
+            <tr>
+                <div class="tr2">
+                    <p>An estimates</p>
+                    <h1 style="position:absolute;left:65px;top:10px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">12.5 <br> MILLION</h1>
+                    <p style="margin-top: 100px;">children and <br>
+                        adoslesents(ages 2-19)<br>
+                        <b>33 HOURS / WEEK </b><br>
+                        and almose <b> None </b> meet <br> recommended healthy diet <br> and phyical activity amount</p>
+                    
+
+                </div>
+            </tr>
+
+        </table>
+        <table>
+            <tr>
+            <div class="tr3">
+                <div class="headt3">
+                    <h1 style="word-spacing:0.5em;color:white;font-size:25px;text-align: left;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">OBESITY IS LINKED <br> TO  MORE CHRONIC <br> CONDITIONS THAN</h1>
+                </div>
+                <div class="pt3">
+                     <p style="text-align: left;">increasing the risk of more thean <b>20 Preventable Diseasees</b>including sleep<br>apcne,astma,heart disease,Type 2 diabetes,osterorathitis,hihg blood <br>pressue and hight cholestral stroke</p>
+
+                </div>
+                <div class="iconst3" style="font-size: 29px;">
+                    <i class="fa fa-fire" aria-hidden="true"></i>
+                    
+                    <i class="fa fa-glass" aria-hidden="true"></i>
+                    <i class="fa fa-money" aria-hidden="true"></i><br>
+                    <p class="iconstp" style="color:white;word-spacing:20px;text-align:justify;">Smoking  drinking   poverty</p>
+                </div>
+                
+            </div>
+            </tr>
+        </table>
+        <table>
+            <tr>
+            <div class="tr4">
+                <i class="fa fa-window-close" aria-hidden="true"></i>
+                <div class="headt4" style="position: absolute;left:20px;">
+                   
+                    <h1 style="word-spacing:0.5em;color:white;font-size:25px;text-align: left;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">RISK FACTORS</h1>
+                </div>
+                <div class="pt3" style="position: absolute;top:60px;left:20px">
+                     <p style="text-align: left;">increasing the risk of more thean<br> <b>20 Preventable Diseasees</b> including <br>apcne,astma,heart disease,Type<br> 2 diabetes,osterorathitis,hihg blood <br>pressue and hieght</p>
+
+                </div>
+                <div class="pt3" style="position: absolute;top:180px;left:20px">
+                    <p style="text-align: left;">increasing the risk of more thean<br> <b>20 Preventable Diseasees</b> be care<br>pressue and hieght</p>
+
+               </div>
+               <div class="pt3" style="position:absolute;top:60px;left:300px">
+                <p style="text-align: left;">increasing the risk of more thean<br> <b>20 Preventable Diseasees</b> including sleep<br>apcne,astma,heart disease,Type<br>
+           
+           </div>
+           <div class="pt3" style="position:absolute;top:150px;left:300px">
+            <p style="text-align: left;">increasing the risk of more thean<br> <b>20 Preventable Diseasees</b> including sleep</p>
+       
+       </div>
+            </div>
+        </tr>
+        </table>
+
+        <table>
+            <tr>
+                <div class="tr5">
+                <div class="content">
+                  <h1 style="word-spacing:0.1em ;text-align:center;color: rgb(255, 255, 255); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">French Fries</h1>
+                  <p style=" color:white; margin-top: -18px;">children and <br>
+                  adoslesents(ages 2-19)<br> </p>
+                  <h1 style="color:white;position:absolute;left:99px;top:100px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">25%</h1>
+                  <p style="color:white;margin-top:60px;"> recommended healthy diet <br> and phyical activity amount</p>
+                </div>
+                
+                <i style="position:absolute;left:110px;color:orange;font-size: 40px;"class="fa fa-cutlery" aria-hidden="true"></i>
+               </div>
+            </tr>
+            <tr>
+                <div class="tr6">
+    
+                    <div class="content">
+                        <i style="position:absolute;top:10px;left:110px;color:crimson;font-size: 40px;"class="fa fa-glass" aria-hidden="true"></i>
+                        <p style=" color:white;position:absolute;left:55px;top:50px">children and <br>
+                        adoslesents(ages 2-19)<br> </p>
+                        <h1 style="color:white;position:absolute;left:99px;top:95px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">40%</h1>
+                        <p style="color:white;position:absolute;left:50px;bottom:80px;text-align: center;"> recommended healthy diet</p>
+                       
+                    </div>
+                    <h1 style="word-spacing:0.1em; position:absolute;left:94px; bottom:-2px;text-align:center;color: rgb(255, 255, 255); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">JUICE</h1>
+                  
+                     </div>
+                </div>
+            </tr>
+
+
+        </table>
+        <table>
+            <tr>
+
+               <div class="tr7">
+                   
+                   <h1 style="text-align:left;position:absolute;top:-15px;left:30px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 45px;">40% TO 50% OF  <br> TOODELERS </h1>
+                   <p style="text-align:left;position:absolute;top:120px;left:30px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Watch more TV than is recommended</p>
+                   <i style="position:absolute ;top:20px;font-size:110px;left:370px;"class="fa fa-television" aria-hidden="true"></i>
+                </div>
+
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+
+               <div class="tr8">
+                   
+                   <h1 style="text-align:left;position:absolute;top:-15px;left:30px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 45px;">NEARLY 1/2 OF <br> PRESCHOLLERS </h1>
+                   <p style="text-align:left;position:absolute;top:120px;left:30px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">dont get enough physical actit8ivity</p>
+                   <i style="position:absolute ;top:20px;font-size:110px;left:370px;"class="fa fa-bicycle" aria-hidden="true"></i>
+                </div>
+
+            </tr>
+        </table>
+
+
+        <table>
+            <tr>
+                <div class="tr9">
+                <div >
+                    <i style="position:absolute;left:100px;top:20px;color:black;font-size: 60px;" class="fa fa-money" aria-hidden="true"></i>
+                 
+                  <p style=" color:white; margin-left:10px;margin-right:10px;margin-top: 88px;">the cost obesitry in the  <br>
+                  united states is staggering totaling about<br> </p>
+                  <h1 style="color:white;position:absolute;left:70px;bottom:20px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">$ 147 <br> billion </h1>
+                 
+                </div>
+                
+                
+               </div>
+            </tr>
+            <tr>
+                <div class="tr10">
+    
+                    <div >
+                        
+                        <h2 style="color:white;position:absolute;left:10px;top:10px;text-align:center;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 28px;">children who <br> eat healthy <br>foods and get <br>daily physical activity:</h2>
+                        <p style="color:white;position:absolute;left:60px;bottom:20px;text-align: center;">higher school absences <br> higher achilvements <br> higer self-esteem</p>
+                       
+                    </div>
+                    
+                  
+                     </div>
+                </div>
+            </tr>
+
+
+        </table>
+    </diV>
+
+    
+
+</div> 
+</div>
+   </diV>
+
+ 
+</div>
 </body>
 </html>
