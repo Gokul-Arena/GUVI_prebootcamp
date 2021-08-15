@@ -429,3 +429,228 @@ img{
 img:hover{
 	border-radius: 50%;
 }
+
+
+10
+
+.share-details {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.5rem;
+  background-color: hsl(217, 19%, 35%);
+  /* overlap */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  /* hide */
+  opacity: 0;
+  /* move down */
+  transform: translateY(2rem);
+  /* animation */
+  transition: all 0.2s ease;
+}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container{
+        border:2px solid whitesmoke;
+        width:50%;
+        overflow:hidden;
+        border-radius:10px;
+        margin:150px;
+      }
+
+      #a{
+        height:100px;
+border-radius:50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="/images/drawers.jpg" width=100%;>
+      <h2>Shift the overall lool and feel by adding these wonderful touches to furniture in your home</h2>
+      <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
+    <span><img id="a" src="/images/avatar-michelle.jpg">
+  <h3>Michelle Appleton</h3>
+  </span>
+    </div>
+  </body>
+</html>
+
+--------------------------------------------------
+
+11-08-2021
+
+const colors = ['crimson', "steelblue", "teal", "orchid", "pink"];
+let index=0;
+var start;
+
+function start(){
+  start = setInterval(cycleColors,1000);
+}
+
+function stop(){
+  setTimeout(()=> clearInterval(start), 1000*10);
+}
+console.log("cyclecolors",index)
+const cycleColors=()=> {
+  if(index==colors.length){
+    index=0;
+  }
+  document.body.style.backgroundColor = colors[index];
+  index++;
+}
+const colorInterval = setInterval(cycleColors,1000);
+
+setTimeout(()=> clearInterval(colorInterval), 1000*10);
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container{
+        border:2px solid whitesmoke;
+        width:50%;
+        overflow:hidden;
+        border-radius:10px;
+        margin:150px;
+      }
+
+      #a{
+        height:100px;
+border-radius:50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="/images/drawers.jpg" width=100%;>
+      <h2>Shift the overall lool and feel by adding these wonderful touches to furniture in your home</h2>
+      <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
+    <span><img id="a" src="/images/avatar-michelle.jpg">
+  <h3>Michelle Appleton</h3>
+  </span>
+    </div>
+  </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en-IN">
+  <head>
+    <title>Nature Sliding Banner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+            .container{
+              text-align:center;
+              margin-top:50px;
+            }
+
+            img{
+              width:100%;
+              height:100%
+            }
+
+            .inner{
+      border:2px solid green;
+      width:50%;
+      height:500px;
+      margin:auto;
+      margin-top:100px;
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1><b>Nature Sliding Banner</b></h1>
+      <div class="inner">
+        <img id="image" />
+      </div>
+      <script>
+        var a = document.getElementById("image");
+        var image = [
+          "images/nature/1.jpeg",
+          "images/nature/2.jpeg",
+          "images/nature/3.jpeg",
+          "images/nature/4.jpeg",
+          "images/nature/5.jpeg",
+        ];
+        var index = 0;
+        console.log(image[0]);
+
+        function cycleImage() {
+          a.setAttribute("src", "image[index]");
+          index = (index + 1) % image.length;
+          console.log(index);
+        }
+        setInterval(cycleImage, 2000);
+      </script>
+    </div>
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+  <title>Nature Sliding Banner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%
+    }
+
+    .inner {
+      border: 2px solid green;
+      width: 50%;
+      height: 500px;
+      margin: auto;
+      margin-top: 100px;
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1><b>Nature Banners</b></h1>
+    <div class="inner">
+      <img id="image" />
+    </div>
+    <script>
+      var a = document.getElementById("image");
+      var image = [
+        "https://www.w3schools.com/html/pic_trulli.jpg",
+        "https://www.w3schools.com/html/img_girl.jpg",
+        "https://www.w3schools.com/html/img_chania.jpg",
+        "https://www.w3schools.com/css/paris.jpg",
+        "https://images.ctfassets.net/hrltx12pl8hq/3MbF54EhWUhsXunc5Keueb/60774fbbff86e6bf6776f1e17a8016b4/04-nature_721703848.jpg?fit=fill&w=480&h=270"
+      ];
+      var index = 0;
+      console.log(image[0]);
+
+      function cycleImage() {
+        a.setAttribute("src", image[index]);
+        index = (index + 1) % image.length;
+        console.log(index);
+      }
+      setInterval(cycleImage, 2000);
+    </script>
+  </div>
+</body>
+
+</html>
