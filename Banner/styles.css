@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+body {
+    background-color: rgb(239, 251, 255);
+}
+
+p {
+    color: hsl(212, 23%, 69%);
+}
+
+.container,
+.info,
+.about {
+    display: flex;
+}
+
+.container {
+    width: 700px;
+    height: 250px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.info {
+    flex-direction: column;
+    padding: 1rem 1rem;
+}
+
+.picture {
+    width: 300px;
+    height: 250px;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.about {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.share {
+    background-color: hsl(210, 46%, 95%);
+    border: 8px solid hsl(210, 46%, 95%);
+    border-radius: 50%;
+}
