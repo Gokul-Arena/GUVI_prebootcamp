@@ -654,3 +654,129 @@ border-radius:50%;
 </body>
 
 </html>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: purple;
+      }
+      .container {
+        background-color: cornflowerblue;
+        margin: 20px 40px;
+        border: 10px solid black;
+        display: inline-block;
+        width: 250px;
+        height: 200px;
+        padding: 10px 0px;
+        text-align: center;
+      }
+
+      .center{
+  text-align: center;
+}
+
+#a{
+    text-align:center;
+    color:white;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+a {
+    color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.active {
+    background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #4CAF50;
+color: white;}
+    </style>
+  </head>
+  <body>
+      <section class="sect"></section>
+
+      <p id="a"></p>
+      <div class="center">
+        <div class="pagination">
+        <a id="pgPrevious" onclick="">Previous</a>
+        <a id="pg1" onclick="" class="active">1</a>
+        <a id="pg2" onclick="">2</a>
+        <a id="pg3" onclick="">3</a>
+        <a id="pg4" onclick="">4</a>
+        <a id="pg5" onclick="">5</a>
+        <a id="pg6" onclick="">6</a>
+        <a id="pg7" onclick="">7</a>
+        <a id="pg8" onclick="">8</a>
+        <a id="pg9" onclick="">9</a>
+        <a id="pg10" onclick="">10</a>
+        <a id="pgNext" onclick="">Next</a>
+        </div>
+      </div>
+
+    <script>
+                async function getUsers() {
+                    const data = await fetch("https://raw.githubusercontent.com/Rajavasanthan/jsondata/master/pagenation.json");
+                    const users = await data.json();
+                    console.log(users);
+                    users.forEach(user => createUser(user));
+                }
+
+                getUsers();
+
+                function createUser({id, name, email}) {
+                    const info = document.createElement("div");
+                    info.setAttribute("class", "container");
+
+                    info.innerHTML =`
+                    <div class="inner">
+                    <p>${id}</p>
+                    <p>${name}</p>
+                    <p>${email}</p>
+                    </div>`
+                    document.querySelector(".sect").appendChild(info);
+                }
+
+                function first() {
+
+                }
+
+                function previous() {
+
+                }
+
+                function next() {
+
+                }
+
+                function current(num) {
+                    let pg = num;
+                    document.querySelector("#a").innerText=`"Current page:${pg}"`;
+                    let act = "pg"+num;
+                    document.getElementById(act).className="active";
+                    let a = (num-1) * 10;
+                    let b = a + 10;
+                }
+    </script>
+  </body>
+</html>
+
+--------------------------------------------------------------
+
+23-08-2021
+
+C - CREATE - POST
+R - READ - GET
+U - UPDATE - PUT
+D - DELETE - DELETE
+
