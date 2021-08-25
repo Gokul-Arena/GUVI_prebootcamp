@@ -1,24 +1,11 @@
 const container = document.createElement("div");
 container.setAttribute("class", "container");
-
-const output = document.createElement("div");
-output.setAttribute("class","output");
-
-const previousOutput = document.createElement("div");
-previousOutput.setAttribute("class", "previousOutput");
-
-const currentOutput = document.createElement("div");
-currentOutput.setAttribute("class", "currentOutput");
-
-const buttons = document.createElement("div");
-buttons.setAttribute("class", "buttons");
-
-const clear = document.createElement("button");
-clear.setAttribute("class", "spanTwo");
-clear.innerText = "/";
-buttons.appendChild(clear);
-
-buttons.innerHTML = `
+container.innerHTML = `
+<div class="output">
+<div class="previousOutput">ff</div>
+<div class="currentOutput">ff</div>
+</div>
+<button class="spanTwo">AC</button>
 <button>DEL</button>
 <button>/</button>
 <button>1</button>
@@ -34,9 +21,6 @@ buttons.innerHTML = `
 <button>9</button>
 <button>+</button>
 <button>.</button>
-<button>0</button>`
-
-const equal = document.createElement("button");
-equal.setAttribute("class", "spanTwo");
-equal.innerText = "=";
-buttons.appendChild(equal);
+<button>0</button>
+<button class="spanTwo">=</button>`
+document.body.appendChild(container);
