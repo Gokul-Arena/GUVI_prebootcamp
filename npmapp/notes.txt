@@ -1,0 +1,162 @@
+NPM Crash Course - https://www.youtube.com/watch?v=jHDhaSSKmB0
+
+Resources:
+https://gist.github.com/bradtraversy/09177818de0f43a6e74e2cd05d1fe596
+
+
+NPM:
+- Node Package Manager
+- Pre-installed with Node.js
+- Easily install modules/packages on your system
+- Modules are basically Javascript libraries
+- Makes it easy for developers to share & reuse code
+
+
+npm version check:
+$ npm -v
+$ npm --version
+
+
+npm help:
+$ npm
+$ npm help
+
+
+package.json file:
+- Manifest file with app info
+- Lists dependencies (name & version)
+- Specify if versions should be updated
+- Create NPM scripts
+- Easily create with "npm init"
+
+
+npm init with default values (no questions)
+$ npm init -y   //creates package.json file
+$ npm init --yes   //creates package.json file
+
+default package.json file content:
+{
+  "name": "npmapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+npm set (using config is optional)
+$ npm config set init-author-name "Gokul"   //sets author to Gokul
+$ npm set init-license "MIT"   //sets license to MIT
+$ npm init -y   //initializes all to default values except set values (author and license)
+
+
+npm get (using config is optional)
+$ npm get init-author-name   //gets author
+$ npm get init-license   //gets license
+
+
+npm delete
+$ npm config delete init-author-name   //delete setted author and restore it to default value
+$ npm config delete init-license   //delete setted license and restore it to default value
+$ npm init-y   // initializes depending upon our setted values or defaults.
+
+
+npm install   //installs and adds dependencies to package.json file
+$ npm install lodash --save   //--save flag is very important
+
+
+create index.js file with below contents
+const _ = require('lodash');
+
+const numbers = [33,46,76,44,32,3];
+
+_.each(numbers, function(number, i){
+    console.log(number);
+});
+
+then in terminal type,
+$ node index   //node file_name
+
+you'll get,
+33
+46
+76
+44
+32
+3
+
+
+install devDependencies
+$ npm install gulp gulp-sass --save-dev   //creates devDependencies in package.json file
+
+
+If u copy only package.json to a new folder without node_modules folder and try,
+$ npm install --production   //installs only dependencies
+$ npm install   //installs both dependencies and devDependencies
+
+
+uninstall devDepenencies
+$ npm uninstall gulp-sass --save-dev   //can also use, npm un gulp-sass --save-dev
+$ npm remove gulp --save-dev   //can also use, npm rm gulp --save-dev
+
+
+uninstall dependencies
+$ npm rm lodash --save
+
+
+install particular module
+$ npm install lodash@4.17.3 --save
+
+
+update module
+$ npm update lodash
+
+
+*Semantic Versioning:
+The Numbers,   8.2.6
+
+8 = Major version (Major changes, breaks the API)
+2 = Minor version (New features, does not break the API)
+6 = Patch (Bug fixes)
+
+^version_number = keeps major version updates minor
+~version_number = keeps major and minor updates patch
+version number = installs the exact mentioned version
+* = installs the latest version
+
+
+installing modules globally
+Till now we have installed modules locally, to install globally use -global flag,
+$ sudo npm install -g nodemon
+$ npm root -g   //shows root folder where global modules will be installed
+$ sudo npm install live-server -g
+
+
+uninstalling global modules
+$ sudo npm rm nodemon -g
+
+
+list modules
+$ npm list
+$ npm list --depth 0 //depth number - number shows folders by level
+
+
+In package.json folder inside scripts,
+create: "start": "node index.js"
+
+And in terminal type,
+$ npm start   //starts the application by executing the code in index.js file
+
+instead of start and test if you are using other in scripts, you should use run,
+$ npm run name   //name can be anything, eg: server, dev, etc.
+
+Eg.
+"scripts": {
+    "start": "node index.js",
+    "dev": "live-server"
+  },

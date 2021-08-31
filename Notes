@@ -804,3 +804,38 @@ D - DELETE - DELETE
       <button>0</button>
       <button class="span-two">=</button>
     </div>
+
+    --------------------------------------------------
+
+31-08-2021
+
+Node - An environment to run javascript in frontend/backend
+NPM - Node Package Manager
+Yarn - Another package manager like npm (Facebook)
+
+Check version of Node:
+> node -v
+
+Check version of NPM:
+> npm -v
+
+Initialize: 
+> npm init
+> npm init -y
+
+Default config:
+> npm config set init-author-name "Guvi"
+> npm config set init-license "MIT"
+
+> npm config set init-author-name
+> npm config set init-license
+
+Install Package:
+> npm install lodash (or) npm i lodash
+> npm install lodash@4.17.11
+> npm install eslint --save-dev
+> npm root -g
+> npm install eslint -g
+> npm install
+> npm install -prod
+> npm uninstall eslint
