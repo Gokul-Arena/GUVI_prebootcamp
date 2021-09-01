@@ -839,3 +839,11 @@ Install Package:
 > npm install
 > npm install -prod
 > npm uninstall eslint
+
+    --------------------------------------------------
+
+01-09-2021
+
+var - Global/funxtion scope
+let - Block scope
+const - Block scope (Read only)
