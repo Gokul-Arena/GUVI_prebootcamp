@@ -847,3 +847,48 @@ Install Package:
 var - Global/funxtion scope
 let - Block scope
 const - Block scope (Read only)
+
+    --------------------------------------------------
+
+02-09-2021
+
+Why to learn React?
+- Reusable
+- Virtual Document
+
+https://us02web.zoom.us/meeting/register/tZ0ud-muqjwpHtL00p-KEjHKhCrOVyucR_9r
+
+Feedback Link : 
+https://forms.gle/pmMEmspZ5VSS4Vh89
+
+References :
+https://reactjs.org/
+https://i.ytimg.com/vi/M-Aw4p0pWwg/maxresdefault.jpg
+https://yarnpkg.com/
+
+Topics :
+1. Introduction to React
+2. React Fundamentals
+
+--------------------------------------------------
+
+import React from "react";
+import ReactDOM from "react-dom"
+
+Session Link:  
+https://us02web.zoom.us/meeting/register/tZAscemrrT8jH9CywPJVhGO_MFDl6TgYsaIz
+
+Feedback Link : 
+https://forms.gle/pmMEmspZ5VSS4Vh89
+
+Topics :
+1. Create-react-app
+2. JSX Introduction
+3. Components - Class and Functional
+4. Props
+5. State and setState
+6. Fragments
+7. Event Handling
+
+Task :
+Implement Counter App
