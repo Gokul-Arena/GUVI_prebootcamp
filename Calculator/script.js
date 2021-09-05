@@ -2,8 +2,8 @@ const container = document.createElement("div");
 container.setAttribute("class", "container");
 container.innerHTML = `
 <div class="output">
-<div previous class="previousOutput">ff</div>
-<div current class="currentOutput">ff</div>
+<div previous class="datapreviousOutput"></div>
+<div current class="datacurrentOutput"></div>
 </div>
 <button clear class="spanOne">AC</button>
 <button delete>DEL</button>
@@ -76,8 +76,11 @@ compute() {
       case '*':
         computation = prev * current
         break
-      case '÷':
+      case '/':
         computation = prev / current
+        break
+      case '%':
+        computation = prev % current
         break
       default:
         return
@@ -86,16 +89,6 @@ compute() {
     this.operation = undefined
     this.previousOutput = ''
 }
-
-updateDisplay() {
-    this.currentElement.innerText = this.getDisplayNumber(this.currentOutput)
-    if (this.operation != null) {
-      this.previousElement.innerText =
-        `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
-    } else {
-      this.previousElement.innerText = ''
-    }
-  }
 
 
 getDisplayNumber(number) {
@@ -115,15 +108,26 @@ getDisplayNumber(number) {
     }
   }
 
+  updateDisplay() {
+    this.currentElement.innerText = this.getDisplayNumber(this.currentOutput)
+    if (this.operation != null) {
+      this.previousElement.innerText =
+        `${this.getDisplayNumber(this.previousOutput)} ${this.operation}`
+    } else {
+      this.previousElement.innerText = ''
+    }
+  }
+
 }
+
 
 const numberButtons = document.querySelectorAll('[number]');
 const operationButtons = document.querySelectorAll('[operation]');
 const equalsButton = document.querySelector('[equals]');
 const deleteButton = document.querySelector('[delete]');
 const clearButton = document.querySelector('[clear]');
-const previousElement = document.querySelector('[previousOutput]');
-const currentElement = document.querySelector('[currentOutput]');
+const previousElement = document.querySelector('[previous]');
+const currentElement = document.querySelector('[current]');
 
 const calculator = new Calculator(previousElement, currentElement)
 
