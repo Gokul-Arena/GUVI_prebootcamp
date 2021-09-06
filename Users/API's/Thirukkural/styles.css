@@ -1,0 +1,32 @@
+body {
+    margin : auto;
+    //background-color:rgb(156, 133, 192);
+}
+
+.header {
+    text-align: center;
+    background-color: rgb(13, 198, 211);
+    position: fixed;
+    margin-top:0px;
+    top:0;
+    width: 100%;
+    padding: 10px;
+}
+
+.data {
+    font-size: 25px;
+    display:block;
+    padding: 3% 20% ;
+    height: max-content;
+    color : rgb(55, 14, 240);
+}
+
+.footer {
+    background-color:rgb(13, 198, 211);
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    //height: 85px;
+    text-align: center;
+    padding: 30px;
+}
